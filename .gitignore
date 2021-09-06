@@ -8,12 +8,13 @@
 # testing
 /coverage
 /.firebase
+/.firebaserc
 # production
 /build
 /public
 /package.json
 /package-lock.json
-/.firebaserc
+
 # misc
 .DS_Store
 .env.local
