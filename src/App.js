@@ -6,9 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import { Button, Input } from '@material-ui/core';
 import Imageupload from './Imageupload';
-// import InstagramEmbed from 'react-instagram-embed';
 import InstagramEmbed from 'react-instagram-embed'
-// import InstagramEmbed from '@aarnila/react-instagram-embed'
 
 function getModalStyle() {
   const top = 35;
@@ -182,9 +180,7 @@ function App() {
         </div>
         <div className="app__postsRight">
           <InstagramEmbed
-              // url='https://instagram/p/Zw9o4/'
               url='https://www.instagram.com/p/CRl8i4tjT3g/'
-              // src="http://platform.instagram.com/en_US/embeds.js"
               clientAccessToken='228532285834116|IGQVJYSE1udjNOY1hZAeV85NExBeGpNa2ktbm50YTNrZAVVTMjVIcXk0U2s1ZA2QtakxOMS1QSXJ1Uk84Nm1aZAXJidmhqWmNLRDZAVN3J6WkxINXF1UDIzT1RCSFFCUkhVcUdVd09EbUcwWHNiNHNqTldvTAZDZD'
               maxWidth={320}
               hideCaption={false}
@@ -198,22 +194,6 @@ function App() {
             />
         </div>
       </div>
-      {/* <InstagramEmbed 
-        url='https://instagram.com/p/B_uf9dmAGPw/'
-        url='https://instagram/p/Zw9o4/'
-        url='https://www.instagram.com/p/CRl8i4tjT3g/'
-        url = 'https://instagr.am/p/CAX8psZMEdL_Lkto_rA_8oIhfVE1IJNLUobpkc0/'
-        clientAccessToken='123|456'
-        maxWidth={320}
-        hideCaption={false}
-        containerTagName='div'
-        protocol=''
-        injectScript
-        onLoading={() => {}}
-        onSuccess={() => {}}
-        onAfterRender={() => {}}
-        onFailure={() => {}}
-      /> */}
       {user?.displayName ? (
         <Imageupload username={user.displayName} />
       ): (
